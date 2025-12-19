@@ -3,7 +3,7 @@ def calculator():
         print("\n--- Simple Calculator Menu ---")
         print("1. Add (+)")
         print("2. Subtract (-)")
-        print("3. Exit")
+        print("3. Multiplication(*)")
         
         choice = input("Select an option (1/2/3): ")
 
@@ -22,8 +22,11 @@ def calculator():
             elif choice == '2':
                 result = num1 - num2
                 print(f"Result: {num1} - {num2} = {result}")
+            elif choice == '3':
+                result = num1*num2
+                print(f"Result: {num1}*{num2}={result}")
         else:
-            print("Invalid input! Please choose 1, 2, or 3.")
+            print("Invalid input! Please choose 1, 2, 3.")
 
 # Run the calculator
 calculator()
