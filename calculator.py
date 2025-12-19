@@ -4,10 +4,12 @@ def calculator():
         print("1. Add (+)")
         print("2. Subtract (-)")
         print("3. Multiplication(*)")
+        print("4. Division (/)")
+        print("5. Exit")
         
-        choice = input("Select an option (1/2/3): ")
+        choice = input("Select an option (1/2/3/4/5): ")
 
-        if choice == '3':
+        if choice == '5':
             print("Goodbye!")
             break
 
@@ -25,8 +27,11 @@ def calculator():
             elif choice == '3':
                 result = num1*num2
                 print(f"Result: {num1}*{num2}={result}")
+            elif choice == '4':
+                result = num1 / num2
+                print(f"Result: {num1} / {num2} = {result}")
         else:
-            print("Invalid input! Please choose 1, 2, 3.")
+            print("Invalid input! Please choose 1, 2, 3,4,5.")
 
 # Run the calculator
 calculator()
